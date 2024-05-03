@@ -1,0 +1,1998 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "2018-05-24T17:52:00Z",
+    "title" : "everydayLearningAPI"
+  },
+  "host" : "8x5gyx35db.execute-api.eu-west-2.amazonaws.com",
+  "basePath" : "/dev",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/addArticle" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/addArticle/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/addNote" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/addNote/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/addQuestion" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        }
+      }
+    },
+    "/addQuestion/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        }
+      }
+    },
+    "/addQuestionFeedback" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/addQuestionFeedback/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/addWrongAnswer" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        }
+      }
+    },
+    "/addWrongAnswer/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        }
+      }
+    },
+    "/deleteArticle" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/deleteArticle/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/deleteHighlight" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/deleteHighlight/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/deleteNote" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/deleteNote/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getActivity" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getActivity/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getArticle" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getArticle/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getArticlesForQuestionGeneration" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        }
+      }
+    },
+    "/getArticlesForQuestionGeneration/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        }
+      }
+    },
+    "/getHighlights" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getHighlights/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getNote" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getNote/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getQuestions" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getQuestions/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/getQuestionsForGeneration" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        }
+      }
+    },
+    "/getQuestionsForGeneration/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        }
+      }
+    },
+    "/listArticles" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/listArticles/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/listNotes" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/listNotes/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/listUsers" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/listUsers/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/saveHighlight" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/saveHighlight/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/updateNoteContent" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    },
+    "/updateNoteContent/{proxy+}" : {
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "x-amazon-apigateway-any-method" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "proxy",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "RequestSchema",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/RequestSchema"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/ResponseSchema"
+            }
+          }
+        },
+        "security" : [ {
+          "sigv4" : [ ]
+        } ]
+      }
+    }
+  },
+  "securityDefinitions" : {
+    "sigv4" : {
+      "type" : "apiKey",
+      "name" : "Authorization",
+      "in" : "header",
+      "x-amazon-apigateway-authtype" : "awsSigv4"
+    }
+  },
+  "definitions" : {
+    "RequestSchema" : {
+      "type" : "object",
+      "required" : [ "request" ],
+      "properties" : {
+        "request" : {
+          "type" : "string"
+        }
+      },
+      "title" : "Request Schema"
+    },
+    "ResponseSchema" : {
+      "type" : "object",
+      "required" : [ "response" ],
+      "properties" : {
+        "response" : {
+          "type" : "string"
+        }
+      },
+      "title" : "Response Schema"
+    }
+  }
+}
